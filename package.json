@@ -1,0 +1,36 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"watch-ts": "tsc -w",
+		"watch-node": "nodemon dist/app.js",
+		"dev": "concurrently \"npm run watch-ts\" \"npm run watch-node\""
+	},
+	"keywords": [],
+	"author": "Nitin",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/express": "^4.17.13",
+		"@types/node": "^17.0.10",
+		"nodemon": "^2.0.15",
+		"ts-node": "^10.4.0",
+		"typescript": "^4.5.4"
+	},
+	"dependencies": {
+		"@types/express-session": "^1.17.4",
+		"apollo-server-express": "^3.6.2",
+		"argon2": "^0.28.3",
+		"cors": "^2.8.5",
+		"dotenv": "^14.2.0",
+		"express": "^4.17.2",
+		"express-session": "^1.17.2",
+		"graphql": "^15.8.0",
+		"pg": "^8.7.1",
+		"reflect-metadata": "^0.1.13",
+		"type-graphql": "^1.1.1",
+		"typeorm": "^0.2.41",
+		"uuid": "^8.3.2"
+	}
+}
